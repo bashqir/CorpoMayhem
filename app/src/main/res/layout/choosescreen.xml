@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/audiencebackground">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="114dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="22dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/turn" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="114dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/money2" />
+
+    <TextView
+        android:id="@+id/turnText"
+        android:layout_width="68dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.019"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/moneyText"
+        android:layout_width="69dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:gravity="center"
+        android:text=" 250"
+        android:textColor="@color/white"
+        android:textDirection="firstStrongRtl"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.937"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <ImageButton
+        android:id="@+id/chooseBankeers"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/bankeersicon"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/chooseWorkers"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="403dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:text="Кого вызываем сегодня?"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.574" />
+
+    <ImageButton
+        android:id="@+id/choosePMC"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/pmcicon"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooseCEO" />
+
+    <ImageButton
+        android:id="@+id/chooseMM"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/mmicon"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/choosePMC"
+        app:layout_constraintTop_toBottomOf="@+id/chooseBankeers" />
+
+    <ImageButton
+        android:id="@+id/chooseWorkers"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/workersicon"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ImageButton
+        android:id="@+id/chooseCEO"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ceoicon"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toStartOf="@+id/chooseWorkers"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/bankeers_strikes"
+        android:layout_width="13dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="28dp"
+        android:text="3"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chooseBankeers" />
+
+    <TextView
+        android:id="@+id/PMCstrikes"
+        android:layout_width="13dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="22dp"
+        android:text="3"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/chooseMM"
+        app:layout_constraintTop_toTopOf="@+id/choosePMC" />
+
+    <TextView
+        android:id="@+id/MMstrikes"
+        android:layout_width="13dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="77dp"
+        android:text="3"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chooseMM" />
+
+    <TextView
+        android:id="@+id/CEOstrikes"
+        android:layout_width="13dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/chooseCEO"
+        app:layout_constraintTop_toTopOf="@+id/chooseCEO" />
+
+    <TextView
+        android:id="@+id/workers_strikes"
+        android:layout_width="13dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:text="3"
+        android:fontFamily="@font/itsabouttimebatt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@+id/chooseWorkers"
+        app:layout_constraintTop_toTopOf="@+id/chooseWorkers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
